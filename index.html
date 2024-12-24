@@ -85,6 +85,67 @@
         text-decoration: none;
         font-weight: bold;
     }
+    .services {
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    }
+
+    .services h2 {
+        font-size: 2.8em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .services p {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 40px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .service-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-icon {
+        font-size: 3em;
+        color: #007BFF; /* Adjust to your primary brand color */
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .service-card p {
+        font-size: 1.1em;
+        color: #666;
+        line-height: 1.5;
+    }
+
     </style>
 </head>
 <body>
@@ -116,14 +177,28 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Diseño de estructuras metálicas</li>
-            <li>Fabricación personalizada</li>
-            <li>Instalación profesional</li>
-        </ul>
-    </section>
+<section id="services" class="services">
+    <h2>Servicios</h2>
+    <p>Descubre nuestros servicios especializados para satisfacer tus necesidades.</p>
+    <div class="service-cards">
+        <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Diseño de Estructuras</h3>
+            <p>Diseñamos soluciones personalizadas para proyectos industriales y comerciales.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3>Fabricación</h3>
+            <p>Fabricamos estructuras metálicas con precisión y calidad superior.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Instalación</h3>
+            <p>Realizamos instalaciones eficientes con nuestro equipo profesional.</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects">
