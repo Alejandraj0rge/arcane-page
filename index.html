@@ -219,6 +219,62 @@
     line-height: 1.5;
 }
 
+.testimonials {
+    background: linear-gradient(to bottom, #f9f9f9, #eaeaea);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.testimonials h2 {
+    font-size: 2.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card .quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .author {
+    font-size: 1em;
+    color: #777;
+    text-align: right;
+}
+
     </style>
 </head>
 <body>
@@ -304,11 +360,25 @@
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <h2>Testimonios</h2>
-        <p>"Un servicio excepcional y estructuras de calidad. ¡Recomendados!" - Cliente A</p>
-        <p>"Profesionales en todo sentido. Mi proyecto fue un éxito." - Cliente B</p>
-    </section>
+<section id="testimonials" class="testimonials">
+    <h2>Testimonios</h2>
+    <p>Lo que nuestros clientes dicen sobre nosotros.</p>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p class="quote">"Un servicio excepcional y estructuras de calidad. ¡Recomendados!"</p>
+            <p class="author">- Cliente A</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="quote">"Profesionales en todo sentido. Mi proyecto fue un éxito."</p>
+            <p class="author">- Cliente B</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="quote">"La atención al detalle y la calidad son insuperables."</p>
+            <p class="author">- Cliente C</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact">
